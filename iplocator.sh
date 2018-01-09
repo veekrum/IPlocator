@@ -9,7 +9,7 @@ function fetch(){
         curl -s https://tools.keycdn.com/geo.json?host={$INPUT} | \
 	sed -e 's/[{}]/''/g' | awk -v k="text" '{n=split($0,a,","); for (i=1; i<=n; i++) print a[i]}' | \
 	grep 'isp\|country_name\|city\|ip\|latitude\|longitude' | \
-	sed -e 's/"/''/g' | sed -e 's/:/=/g'> $DIR 
+	sed -e 's/"/''/g' | sed -e 's/:/= /g'> $DIR 
 cat $DIR
 rm $DIR
 }

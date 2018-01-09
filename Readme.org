@@ -8,6 +8,11 @@ sudo make install
 #+END_SRC
 
 *** HOW TO
+#+BEGIN_SRC bash
+iplocator www.google.com or 172.X.X.X 
+#+END_SRC
+
+*** USAGE
 
 + iplocator -h|--help    --> shows the help option
 + iplocator -u|--usage   --> shows how to use

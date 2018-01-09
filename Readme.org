@@ -8,9 +8,19 @@ sudo make install
 #+END_SRC
 
 *** HOW TO
+**** With Domain 
 #+BEGIN_SRC bash
-iplocator www.google.com or 172.X.X.X 
+iplocator www.google.com 
 #+END_SRC
+[[https://github.com/veekrum/IPlocator/blob/master/images/image1.png]]
+
+*** OR
+**** With IP
+If you have an IP Address instead of the domain
+#+BEGIN_SRC bash
+iplocator 172.X.X.X 
+#+END_SRC
+[[https://github.com/veekrum/IPlocator/blob/master/images/image2.png]]
 
 *** USAGE
 
@@ -24,3 +34,4 @@ iplocator www.google.com or 172.X.X.X
 cd IPlocator
 sudo make uninstall
 #+END_SRC
+

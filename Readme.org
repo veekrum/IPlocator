@@ -1,1 +1,2 @@
-test 
+This command tool helps to trace the IP and finds the origin of the ip or the domain. you can get the ip, counrty located, city, isp name , longitude and latitude
+

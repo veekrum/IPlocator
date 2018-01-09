@@ -10,9 +10,9 @@ sudo make install
 *** HOW TO
 **** With Domain 
 #+BEGIN_SRC bash
-iplocator www.google.com 
+iplocator google.com 
 #+END_SRC
-[[https://github.com/veekrum/IPlocator/blob/master/images/image1.png]]
+[[https://github.com/veekrum/IPlocator/blob/master/images/image3.png]]
 
 *** OR
 **** With IP

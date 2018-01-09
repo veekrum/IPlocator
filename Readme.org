@@ -1,2 +1,21 @@
 This command tool helps to trace the IP and finds the origin of the ip or the domain. you can get the ip, counrty located, city, isp name , longitude and latitude
 
+*** INSTALLATION
+#+BEGIN_SRC bash
+git clone git@github.com:veekrum/IPlocator.git
+cd IPlocator
+sudo make install
+#+END_SRC
+
+*** HOW TO
+
++ iplocator -h|--help    --> shows the help option
++ iplocator -u|--usage   --> shows how to use
++ iplocator -v|--version --> shows the version
+
+*** UNINSTALL
+
+#+BEGIN_SRC bash
+cd IPlocator
+sudo make uninstall
+#+END_SRC

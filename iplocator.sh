@@ -52,3 +52,6 @@ while true; do
 done
 
 fetch
+
+echo hello world
+

@@ -6,7 +6,7 @@ INPUT=$1
 DIR=/tmp/test1.txt
 
 function fetch(){
-	curl  -H "User-Agent: keycdn-tools:https://veekrum.github.io" https://tools.keycdn.com/geo.json?host={$INPUT} | \
+	curl -s -H "User-Agent: keycdn-tools:https://veekrum.github.io" https://tools.keycdn.com/geo.json?host={$INPUT} | \
 	sed -e 's/[{}]/''/g' | awk -v k="text" '{n=split($0,a,","); for (i=1; i<=n; i++) print a[i]}' | \
 	grep 'isp\|country_name\|city\|ip\|latitude\|longitude\|region_name\|continent_name\|metro_code' | \
 	sed -e 's/"/''/g' | sed -e 's/:/= /g'> $DIR 
